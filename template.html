@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{title}}</title>
+<meta name="description" content="{{meta_description}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{meta_description}}">
+<meta property="og:url" content="https://drewhoover.com/protein-shaker-lookbook/">
+<meta property="og:image" content="https://drewhoover.com/protein-shaker-lookbook/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{meta_description}}">
+<meta name="twitter:image" content="https://drewhoover.com/protein-shaker-lookbook/og.png">
+<link rel="canonical" href="https://drewhoover.com/protein-shaker-lookbook/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M20 18h24l-3 40H23z' fill='%23a9b0b6' stroke='%231b1a17' stroke-width='3'/%3E%3Crect x='18' y='8' width='28' height='10' rx='2' fill='%231b1a17'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://drewhoover.com/embed/back-bar.js" async></script>
+<script src="https://drewhoover.com/embed/giscus.js" async></script>
+<style>
+:root{
+  --paper:#eef0f1; --card:#fbfcfc; --ink:#16191c; --muted:#5d656c; --hair:#d3d8dc;
+  --steel:#7b8a96; --accent:#1f6f8b; --ok:#2f6b45; --ok-bg:#e1eee4;
+  --warn-bg:#f8e7cf; --warn-ink:#7a4306; --no-bg:#f5dcd8; --no-ink:#8a2416; --track:#dde2e5;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+
+/* masthead */
+.masthead{padding:52px 0 26px}
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.kicker a{color:inherit;text-decoration:none;transition:.15s;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent)}
+.kicker a:hover{border-bottom-color:currentColor}
+h1{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:clamp(38px,6.6vw,74px);line-height:.98;letter-spacing:-.02em;margin:14px 0 14px;max-width:16ch}
+.sub{font-size:clamp(17px,2.1vw,20px);max-width:720px;margin:0 0 18px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 6px}
+.pill{font:500 13px "IBM Plex Mono",monospace;border:1.5px solid var(--ink);border-radius:999px;padding:3px 10px;text-decoration:none}
+.pill:hover{background:var(--ink);color:var(--paper)}
+
+/* anchor */
+.anchor{margin:28px 0 8px;background:var(--card);border:1.5px solid var(--ink);padding:18px 18px 16px}
+.anchor h3{margin:0 0 4px;font:600 12px "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.anchor p{margin:0 0 12px;max-width:820px}
+.bars{display:grid;gap:8px}
+.barrow{display:grid;grid-template-columns:190px 1fr 70px;gap:10px;align-items:center;font-size:14px}
+.barrow .lab{font-weight:600}
+.barrow .val{font:500 13px "IBM Plex Mono",monospace;text-align:right}
+.btrack{height:16px;background:var(--track);position:relative}
+.bfill{position:absolute;inset:0 auto 0 0;background:var(--accent)}
+.bfill.anchorbar{background:var(--ink)}
+.btrack .tick,.ptrack .tick{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--no-ink)}
+@media (max-width:600px){.barrow{grid-template-columns:1fr 60px;gap:3px 10px}.barrow .lab{grid-column:1/-1}}
+.boxes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:14px 0 0}
+.box{background:var(--card);border:1.5px solid var(--hair);padding:14px 16px}
+.box h3{margin:0 0 6px;font:600 12px "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.box p{margin:0;font-size:15px}
+.legend{font-size:14px;color:var(--muted);margin:16px 0 0;max-width:900px}
+
+/* sections */
+section{padding:44px 0 40px}
+.sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.sec-head h2{font-family:Fraunces,Georgia,serif;font-weight:800;font-size:clamp(28px,4vw,42px);margin:0;letter-spacing:-.01em}
+.sec-head .count{font:500 14px "IBM Plex Mono",monospace;color:var(--muted)}
+.intro{max-width:780px;margin:0 0 22px}
+#steel{background:var(--paper)}
+#bar{background:#1c1f22;color:#e9ecee}
+#bar .intro,#bar .sec-head .count{color:#aab2b8}
+#fix{background:#e2e6e8}
+#plastic{background:#f4f2ee}
+#cut{background:#16191c;color:#e6e9eb}
+#cut .intro,#cut .sec-head .count{color:#9aa3aa}
+
+/* grid + cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{background:var(--card);color:var(--ink);border:1.5px solid var(--ink);display:flex;flex-direction:column;position:relative}
+.rank{position:absolute;top:10px;left:10px;z-index:2;background:var(--ink);color:var(--paper);font:600 13px "IBM Plex Mono",monospace;padding:2px 8px}
+.media{background:#fff;border-bottom:1.5px solid var(--ink)}
+.main{aspect-ratio:4/3;width:100%;object-fit:contain;cursor:zoom-in;background:#fff}
+.thumbs{display:flex;gap:6px;padding:6px;border-top:1px solid var(--hair)}
+.thumbs img{width:50px;height:50px;object-fit:cover;border:1px solid var(--hair);cursor:pointer;background:#fff}
+.thumbs img.on{border-color:var(--ink)}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
+.shop{font:600 12px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.card h3{margin:0;font-size:20px;line-height:1.2;font-weight:700}
+.variant{font-size:14px;color:var(--muted);margin-top:2px}
+.pricebox{border:1px solid var(--hair);padding:8px 10px;background:#fff}
+.pricebox .top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.pricebox .top b{font:600 17px "IBM Plex Mono",monospace}
+.pricebox .top span{font:500 12.5px "IBM Plex Mono",monospace;color:var(--muted);text-align:right}
+.ptrack{height:10px;background:var(--track);margin-top:6px;position:relative}
+.pfill{position:absolute;inset:0 auto 0 0;background:var(--accent)}
+.checks{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:14px;margin:0}
+.checks dt{font:500 12px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding-top:2px}
+.checks dd{margin:0}
+.v{font:500 12.5px "IBM Plex Mono",monospace;padding:2px 7px;border-radius:3px;display:inline-block}
+.v.ok{background:var(--ok-bg);color:#14532d}
+.v.meh{background:var(--warn-bg);color:var(--warn-ink)}
+.v.no{background:var(--no-bg);color:var(--no-ink)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:500 12px "IBM Plex Mono",monospace;padding:3px 7px;border-radius:3px;background:#e7eaec;color:#353b40}
+.chip.flag{background:var(--warn-bg);color:var(--warn-ink)}
+.note{font-size:15px;margin:0}
+.rating{font:500 12.5px "IBM Plex Mono",monospace;color:var(--muted)}
+.actions{margin-top:auto;display:flex;gap:8px;flex-wrap:wrap}
+.buy{flex:1 1 160px;text-align:center;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;padding:11px 12px;border:1.5px solid var(--ink)}
+.buy:hover{background:var(--card);color:var(--ink)}
+.buy.alt{background:transparent;color:var(--ink);flex:0 1 auto}
+
+/* cut list */
+.cutlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:0 28px;margin:0;padding:0;list-style:none}
+.cutlist li{display:flex;flex-direction:column;gap:2px;padding:10px 0;border-bottom:1px solid #353a3f}
+.cutlist .n{font-weight:600}
+.cutlist .n a{text-decoration:none;border-bottom:1px solid #5f666c}
+.cutlist .r{font:500 13px "IBM Plex Mono",monospace;color:#f0b8a8}
+
+footer{padding:26px 0 40px;font-size:14px;color:var(--muted)}
+footer .src{font-size:13px}
+footer .src a{color:var(--muted)}
+#comments{max-width:1200px;margin:0 auto;padding:0 16px 40px}
+.lb{position:fixed;inset:0;background:rgba(10,10,10,.88);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+.lb.on{display:flex}
+.lb img{max-width:min(92vw,1100px);max-height:88vh;background:#fff}
+.lb .x{position:absolute;top:10px;right:18px;color:#fff;font-size:40px;cursor:pointer;line-height:1}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <div class="kicker"><a href="https://github.com/DrewHoo/shopping-lookbook" target="_blank" rel="noopener">A shopping lookbook</a> · <span id="kickerTail"></span></div>
+    <h1 id="h1"></h1>
+    <p class="sub" id="sub"></p>
+    <nav class="pills" id="pills"></nav>
+    <div class="anchor">
+      <h3>The Gymreapers line</h3>
+      <p id="anchorBox"></p>
+      <div class="bars" id="anchorBars"></div>
+    </div>
+    <div class="boxes">
+      <div class="box"><h3 id="box1h"></h3><p id="box1"></p></div>
+      <div class="box"><h3 id="box2h"></h3><p id="box2"></p></div>
+    </div>
+    <p class="legend" id="legend"></p>
+  </div>
+</header>
+
+<main id="sections"></main>
+
+<footer><div class="wrap">
+  <p id="footer"></p>
+  <p class="src" id="sources"></p>
+</div></footer>
+<div id="comments"></div>
+<div class="lb" id="lb" role="dialog" aria-label="Image viewer"><span class="x" aria-label="Close">&times;</span><img id="lbimg" alt=""></div>
+
+<script>
+/*DATA*/
+const COPY = /*COPY*/;
+const SECS = ['steel','bar','fix','plastic'];
+
+const $ = (s,el=document) => el.querySelector(s);
+const esc = s => String(s??'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const disp = (u,w) => u.includes('cdn.shopify.com') ? u+'?width='+w
+  : u.includes('media-amazon') ? u.replace(/\._AC_SL\d+_\./, w>300?'._AC_SL800_.':'._AC_SL160_.') : u;
+
+// verdict maps: [label, class]
+const DW = {all:['Whole thing','ok'], top:['Top rack, all parts','ok'], lid:['Lid only, hand-wash cup','no'], hand:['Hand wash only','no'], claim:['Seller says yes','meh']};
+const WALL = {single:['Single wall','ok'], double:['Double wall','meh'], na:['Single wall (open tin)','ok'], unk:['Not stated','meh']};
+const BODY = {steel:'ok', plastic:'meh', glass:'meh'};
+
+function pricebox(it){
+  const pct = Math.min(100, it.price/ANCHOR.price*100);
+  const under = ANCHOR.price - it.price;
+  return `<div class="pricebox"><div class="top"><b>$${it.price.toFixed(2)}</b>
+      <span>${it.priceNote?esc(it.priceNote)+' · ':''}${under>0?'$'+under.toFixed(2)+' under the Gymreapers':'over the Gymreapers'}</span></div>
+    <div class="ptrack" title="Full bar = the $${ANCHOR.price} Gymreapers; red tick = your $${CEILING} ceiling">
+      <div class="pfill" style="width:${pct}%"></div><span class="tick" style="left:${CEILING/ANCHOR.price*100}%"></span></div></div>`;
+}
+
+function checks(it){
+  const dw = DW[it.dw], wall = it.wall ? WALL[it.wall] : null;
+  return `<dl class="checks">
+    <dt>Body</dt><dd><span class="v ${BODY[it.bodyKind]}">${esc(it.body)}</span></dd>
+    <dt>Dishwasher</dt><dd><span class="v ${dw[1]}">${dw[0]}</span></dd>
+    ${wall?`<dt>Wall</dt><dd><span class="v ${wall[1]}">${wall[0]}</span></dd>`:''}
+    <dt>To wash</dt><dd><span class="v ${it.parts<=3?'ok':'meh'}">${it.parts} parts</span> <span class="rating">${esc(it.partsNote||'')}</span></dd>
+  </dl>`;
+}
+
+function card(it){
+  const imgs = it.imgs.map(u => ({full:u, d:disp(u,800), t:disp(u,120)}));
+  const chips = [...it.specs.map(s=>`<span class="chip">${esc(s)}</span>`), ...(it.flags||[]).map(f=>`<span class="chip flag">${esc(f)}</span>`)].join('');
+  const host = new URL(it.url).hostname.replace(/^www\./,'');
+  return `<article class="card" data-id="${it.id}">
+    <span class="rank">#${it.rank}</span>
+    <div class="media">
+      <img class="main" src="${imgs[0].d}" data-full="${imgs[0].full}" alt="${esc(it.brand+' '+it.name)}" loading="lazy">
+      ${imgs.length>1?`<div class="thumbs">${imgs.map((im,i)=>`<img src="${im.t}" data-disp="${im.d}" data-full="${im.full}" class="${i?'':'on'}" alt="" loading="lazy">`).join('')}</div>`:''}
+    </div>
+    <div class="body">
+      <div class="shop">${esc(it.brand)} · ${esc(it.via)}</div>
+      <div><h3>${esc(it.name)}</h3><div class="variant">${esc(it.variant)}</div></div>
+      ${pricebox(it)}
+      ${checks(it)}
+      <div class="chips">${chips}</div>
+      <p class="note">${esc((COPY.notes||{})[it.id]||'')}</p>
+      ${it.rating?`<div class="rating">${esc(it.rating)}</div>`:''}
+      <div class="actions">
+        <a class="buy" href="${it.url}" target="_blank" rel="noopener">${it.via==='Amazon'?'View on Amazon':'Buy at '+esc(host)} ↗</a>
+        ${it.also?`<a class="buy alt" href="${it.also.url}" target="_blank" rel="noopener">${esc(it.also.label)} ↗</a>`:''}
+      </div>
+    </div>
+  </article>`;
+}
+
+function render(){
+  $('#kickerTail').textContent = COPY.kicker_tail||''; for (const k of ['h1','sub','anchorBox','box1h','box1','box2h','box2','legend','footer']) $('#'+k).textContent = COPY[k]||'';
+  $('#sources').innerHTML = COPY.sources_html||'';
+
+  const S = COPY.sections||{};
+  $('#sections').innerHTML = SECS.map(sec=>{
+    const items = ITEMS.filter(i=>i.sec===sec).sort((a,b)=>a.rank-b.rank);
+    if (!items.length) return '';
+    return `<section id="${sec}"><div class="wrap">
+      <div class="sec-head"><h2>${esc(S[sec]?.title)}</h2><span class="count">${items.length} pick${items.length>1?'s':''}</span></div>
+      <p class="intro">${esc(S[sec]?.intro)}</p>
+      <div class="grid">${items.map(card).join('')}</div>
+    </div></section>`;
+  }).join('') + `<section id="cut"><div class="wrap">
+      <div class="sec-head"><h2>${esc(S.cut?.title)}</h2><span class="count">${CUT.length} checked</span></div>
+      <p class="intro">${esc(S.cut?.intro)}</p>
+      <ul class="cutlist">${CUT.map(c=>`<li><span class="n"><a href="${c.url}" target="_blank" rel="noopener">${esc(c.name)}</a></span><span class="r">${esc(c.why)}</span></li>`).join('')}</ul>
+    </div></section>`;
+
+  $('#pills').innerHTML = SECS.filter(s=>ITEMS.some(i=>i.sec===s)).map(s=>`<a class="pill" href="#${s}">${esc(S[s]?.title)} · ${ITEMS.filter(i=>i.sec===s).length}</a>`).join('')
+    + `<a class="pill" href="#cut">${esc(S.cut?.title)} · ${CUT.length}</a>`;
+
+  const row = (lab,p,cls) => `<div class="barrow"><span class="lab">${esc(lab)}</span>
+    <div class="btrack"><div class="bfill ${cls||''}" style="width:${p/ANCHOR.price*100}%"></div><span class="tick" style="left:${CEILING/ANCHOR.price*100}%"></span></div>
+    <span class="val">$${p.toFixed(2)}</span></div>`;
+  $('#anchorBars').innerHTML = row(ANCHOR.label, ANCHOR.price, 'anchorbar')
+    + ANCHOR_ROWS.map(id=>{const it=ITEMS.find(i=>i.id===id); return row(it.brand+' '+it.short, it.price);}).join('');
+}
+
+document.addEventListener('click', e=>{
+  const th = e.target.closest('.thumbs img');
+  if (th){ const card = th.closest('.card'); const m = $('.main',card); m.src = th.dataset.disp; m.dataset.full = th.dataset.full;
+    card.querySelectorAll('.thumbs img').forEach(t=>t.classList.toggle('on', t===th)); return; }
+  const main = e.target.closest('.main');
+  if (main){ $('#lbimg').src = main.dataset.full; $('#lb').classList.add('on'); return; }
+  if (e.target.closest('#lb')) $('#lb').classList.remove('on');
+});
+document.addEventListener('keydown', e=>{ if (e.key==='Escape') $('#lb').classList.remove('on'); });
+render();
+</script>
+</body>
+</html>
